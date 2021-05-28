@@ -1,0 +1,7 @@
+[user]
+	name = Aleksei Zaitsev
+	email = drshnitsel@gmail.com
+[init]
+	defaultBranch = master
+[core]
+	excludesfile = ~/.global_gitignore

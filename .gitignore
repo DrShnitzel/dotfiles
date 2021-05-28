@@ -1,0 +1,15 @@
+/*
+
+!.gitignore
+!.gitmodules
+
+!.gitconfig
+!.global_gitignore
+
+!.zshrc
+!zshrc/
+!.oh-my-zsh/
+
+!.vimrc
+!.vim/
+.vim/.netrwhist
