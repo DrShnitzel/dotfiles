@@ -1,5 +1,5 @@
 source $HOME/zshrc/oh-my-zsh.sh
-source $HOME/zshrc/aliaces.sh
+source $HOME/zshrc/aliases.sh
 source $HOME/zshrc/golang.sh
 source $HOME/zshrc/ruby.sh
 
