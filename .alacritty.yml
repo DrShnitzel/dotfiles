@@ -1,2 +1,6 @@
 window:
     decorations: "none"
+shell:
+    program: /bin/zsh
+    args:
+       - --login
