@@ -19,3 +19,11 @@
 !.alacritty.yml
 
 !README.md
+
+# i3 config
+!.xinitrc
+!.Xresources
+!.config
+.config/*
+!.config/i3
+.config/i3/custom.conf
