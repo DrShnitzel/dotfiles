@@ -22,3 +22,13 @@ dotfiles add ~/my/file/path
 ```bash
 dotfiles add -u
 ```
+
+## OSX additional setup
+
+```bash
+brew install fish nvim fd ripgrep bat zenith ranger rbenv ruby-build starship gh
+brew install --cask warp
+# setup fish
+sudo sh -c 'echo $(which fish) >> /etc/shells'
+chsh -s $(which fish)
+```
