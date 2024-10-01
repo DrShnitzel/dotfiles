@@ -1,4 +1,4 @@
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# eval "$(/opt/homebrew/bin/brew shellenv)"
 
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 dotfiles config --local status.showUntrackedFiles no
@@ -25,3 +25,4 @@ end
 # set -U fish_user_paths /Users/drschnitzel/.local/share/gem/ruby/3.3.0/bin $fish_user_paths
 
 alias rubocop-fix="bundle exec --gemfile=gemfiles/rubocop.gemfile rubocop --config .rubocop.master.yml --fix (git diff --name-only HEAD~1)"
+set -x PATH $HOME/.rbenv/bin $PATH

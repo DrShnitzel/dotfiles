@@ -1,0 +1,7 @@
+[shell]
+program = "zellij"
+args = ["a", "default"]
+
+[window]
+startup_mode = "Maximized"
+decorations = "None"

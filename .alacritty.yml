@@ -1,4 +1,4 @@
 window:
   startup_mode: Maximized
 shell:
-    program: /bin/zsh
+    program: zellij
