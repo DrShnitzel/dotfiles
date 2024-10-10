@@ -7,22 +7,13 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "theme": "Github Light",
-  "vim_mode": false,
+  "theme": "Atelier Sulphurpool Dark",
+  "vim_mode": true,
   "ui_font_size": 16,
   "buffer_font_size": 16,
   "languages": {
     "Ruby": {
-      "language_servers": ["ruby-lsp", "!solargraph"],
-      "format_on_save": "on",
-      "Ruby": {
-        "formatter": {
-          "external": {
-            "command": "standardrb",
-            "arguments": ["--fix", "--stdin", "ignored", "--stderr"]
-          }
-        }
-      }
+      "language_servers": ["ruby-lsp", "ruby-lsp-rails", "!solargraph"]
     }
   }
 }

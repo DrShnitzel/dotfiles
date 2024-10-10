@@ -1,6 +1,12 @@
 [language-server.ruby-lsp]
 command = "ruby-lsp"
 
+[language-server.ruby-lsp-rails]
+command = "ruby-lsp-rails"
+
+[language-server.ruby-lsp-rspec]
+command = "ruby-lsp-rspec"
+
 [[language]]
 name = "ruby"
-language-servers = [ "ruby-lsp" ]
+language-servers = [ "ruby-lsp", "ruby-lsp-rails", "ruby-lsp"]
