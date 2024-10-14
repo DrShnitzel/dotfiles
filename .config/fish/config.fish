@@ -24,5 +24,5 @@ if [ -f $HOME/.config/fish/git.fish ]
 end
 
 alias rubocop-fix="bundle exec --gemfile=gemfiles/rubocop.gemfile rubocop --config .rubocop.master.yml --fix (git diff --name-only HEAD~1)"
-
+alias hx="helix"
 set -x PATH $HOME/.rbenv/bin $PATH

@@ -1,6 +1,6 @@
 [shell]
 program = "zellij"
-args = ["a", "default"]
+args = ["a","--create", "default"]
 
 [window]
 startup_mode = "Maximized"
