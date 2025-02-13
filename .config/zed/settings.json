@@ -7,13 +7,33 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "theme": "Atelier Sulphurpool Dark",
+  "features": {
+    "inline_completion_provider": "zed"
+  },
+  "base_keymap": "VSCode",
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4o"
+    },
+    "version": "2"
+  },
+  "theme": {
+    "mode": "system",
+    "light": "Tokyo Night Light",
+    "dark": "Atelier Cave Dark"
+  },
   "vim_mode": true,
+  "relative_line_numbers": true,
   "ui_font_size": 16,
-  "buffer_font_size": 16,
+  "buffer_font_size": 14.0,
   "languages": {
+    "Plain Text": {
+      "show_inline_completions": false
+    },
     "Ruby": {
-      "language_servers": ["ruby-lsp", "ruby-lsp-rails", "!solargraph"]
+      "show_inline_completions": true,
+      "language_servers": ["ruby-lsp", "!solargraph"]
     }
   }
 }

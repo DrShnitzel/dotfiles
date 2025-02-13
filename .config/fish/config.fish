@@ -17,7 +17,7 @@ starship init fish | source
 
 status --is-interactive; and rbenv init - fish | source
 
-set -x EDITOR hx
+set -x EDITOR nvim
 
 if [ -f $HOME/.config/fish/git.fish ]
     source $HOME/.config/fish/git.fish
@@ -26,3 +26,7 @@ end
 alias rubocop-fix="bundle exec --gemfile=gemfiles/rubocop.gemfile rubocop --config .rubocop.master.yml --fix (git diff --name-only HEAD~1)"
 alias hx="helix"
 set -x PATH $HOME/.rbenv/bin $PATH
+# Set up fzf key bindings
+fzf --fish | source
+
+direnv hook fish | source
