@@ -30,3 +30,5 @@ set -x PATH $HOME/.rbenv/bin $PATH
 fzf --fish | source
 
 direnv hook fish | source
+
+set -x XDG_CONFIG_HOME $HOME/.config

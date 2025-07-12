@@ -1,0 +1,24 @@
+[
+  {
+    "label": "test $ZED_RELATIVE_FILE:$ZED_ROW",
+    "command": "bundle exec rails",
+    "args": ["test", "\"$ZED_RELATIVE_FILE:$ZED_ROW\""],
+    "tags": ["ruby-test"],
+    "use_new_terminal": false
+  },
+  {
+    "label": "minitest current file",
+    "command": "bundle exec rails",
+    "args": ["test", "\"$ZED_RELATIVE_FILE\""],
+    "tags": ["ruby-minitest"],
+    "use_new_terminal": false
+  },
+  {
+    "label": "rubocop fix current file",
+    "command": "bin/rubocop --fix",
+    "args": ["\"$ZED_RELATIVE_FILE\""],
+    "tags": ["rubocop"],
+    "use_new_terminal": true,
+    "hide": "on_success"
+  }
+]

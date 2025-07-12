@@ -7,32 +7,45 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "edit_predictions": {
+    "mode": "subtle",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null,
+      "enterprise_uri": null
+    },
+    "enabled_in_text_threads": false
+  },
+  "show_edit_predictions": false,
   "features": {
-    "inline_completion_provider": "zed"
+    "edit_prediction_provider": "zed"
   },
   "base_keymap": "VSCode",
-  "assistant": {
+  "agent": {
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4o"
+      "provider": "openai",
+      "model": "gpt-4.1"
     },
     "version": "2"
   },
   "theme": {
     "mode": "system",
     "light": "Tokyo Night Light",
-    "dark": "Atelier Cave Dark"
+    "dark": "Tokyo Night"
   },
   "vim_mode": true,
   "relative_line_numbers": true,
   "ui_font_size": 16,
   "buffer_font_size": 14.0,
   "languages": {
+    "Python": {
+      "show_edit_predictions": true
+    },
     "Plain Text": {
-      "show_inline_completions": false
+      "show_edit_predictions": false
     },
     "Ruby": {
-      "show_inline_completions": true,
+      "show_edit_predictions": true,
       "language_servers": ["ruby-lsp", "!solargraph"]
     }
   }
